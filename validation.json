@@ -1,0 +1,32 @@
+{
+  "syntax": "passed",
+  "test_cases": 78,
+  "failures": 0,
+  "errors": 0,
+  "startup_smoke_checks": [
+    {
+      "script": "flight_control.py",
+      "quiet_missing_ros_failure_verified": true
+    },
+    {
+      "script": "vision_recognition.py",
+      "quiet_missing_ros_failure_verified": true
+    }
+  ],
+  "original_source_unchanged": true,
+  "model_inference": "not tested with real weights",
+  "ros_transport": "mocked callback/topic exchange only",
+  "px4_sitl_hitl_real_flight": "not tested",
+  "files_sha256": {
+    "flight_control.py": "bbca21b8528e2b92e1ac606911111fed93bf61c6274628d517f2074c311800c8",
+    "mission_common.py": "854d7086e6f9d9d57dab916bbe4dd169f80199a023cdb095f476a6805b6c923e",
+    "vision_recognition.py": "9ab4c6cdb0c74723233e3fa16b7a7db7bc5d4a656793d920e0217cf35c2844eb"
+  },
+  "test_results_scope": "78 tests from preceding implementation; this path-only update verified syntax, default paths and command-line override without repeating those tests.",
+  "path_update_checks": {
+    "syntax": "passed",
+    "shared_and_flight_default_paths": "passed",
+    "explicit_model_override": "passed",
+    "model_default_ignores_DIGIT_MODEL_PATH": true
+  }
+}
